@@ -9,7 +9,7 @@ using namespace std;
 		y = 0;
 	}
 	Point::Point(int x, int y) {
-		cout << "Point(int x, int y) - constructor with arguements\n";
+		cout << "Point(int x, int y) - constructor with arguments\n";
 		this->x = x;
 		this->y = y;
 	}
