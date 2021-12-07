@@ -1,18 +1,27 @@
 #include "Circle.h"
+#include <iostream>
+using namespace std;
 
 Circle::Circle() {
-	Point* p = new Point();
-	rad = 1;
+	pc = new Point();
+	r=0;
 }
 
-Circle::Circle(int x, int y, int rad):Point(x,y),rad(rad) {
-	
+Circle::Circle(int x, int y, int rad)
+	: Point(x,y),r(rad)
+{
+
+	cout << "Circle(int x, int y, int rad) constructor with arguments is called "<<x<< " "<<y<<" "<<rad;
 }
 
-Circle::Circle(Circle& p, int rad) {
-
+Circle::Circle(Circle& c)
+	: Point(c), r(c.r)
+{
+	cout << "Circle copy constructor is called\n";
 }
+
+
 
 Circle::~Circle() {
-
+	cout << "destructor Circle: " << x<< " "<< y <<" "<< r<<endl;
 }

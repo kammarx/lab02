@@ -20,6 +20,18 @@ using namespace std;
 		y = p.y;
 	}
 
+	int Point::getX() {
+		return x;
+	}
+
+	int Point::getY() {
+		return y;
+	}
+
+	void Point::PrintCoord() {
+		cout << x << "   " << y <<endl;;
+	}
+
 	Point::~Point() {
 		cout << x << " " << y << endl;;
 		cout << "~Point() - destructor is called\n";
@@ -29,6 +41,7 @@ using namespace std;
 		x = x + dx;
 		y = y + dy;
 	}
+
 
 	void Point::reset(){
 		x = 0;

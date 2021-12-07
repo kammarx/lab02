@@ -2,6 +2,7 @@
 #include <conio.h>
 #include "Point.h"
 #include "Line.h"
+#include "Circle.h"
 using namespace std;
 
 
@@ -11,7 +12,8 @@ using namespace std;
 int main()
 {
 	
-	/*	Point p1;
+
+		Point p1;
 		Point p2(50, 80);
 		Point p3(p2);
 		Point* p4 = new Point;
@@ -22,9 +24,9 @@ int main()
 		p2.reset();
 		delete p4;
 		delete p5;
-		delete p6;*/
+		delete p6;
 
-		Line* s1 = new Line;
+	    Line* s1 = new Line;
 		Line* s2 = new Line(*s1);
 	
 		delete s1;

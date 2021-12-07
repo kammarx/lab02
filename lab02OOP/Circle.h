@@ -3,13 +3,14 @@
 class Circle : public Point
 {
 protected:
-	int rad;
+	int r;
+	Point* pc;
 public:
 	Circle();
 
 	Circle(int x, int y, int rad);
 
-	Circle(Circle& p, int rad);
+	Circle(Circle& c);
 
 	~Circle();
 

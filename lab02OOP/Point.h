@@ -10,6 +10,12 @@ class Point
 
 		Point(const Point& p);
 
+		int getX();
+
+		int getY();
+
+		void PrintCoord();
+
 		~Point();
 
 		void move(int dx, int dy);
