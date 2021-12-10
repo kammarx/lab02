@@ -28,6 +28,15 @@ using namespace std;
 		return y;
 	}
 
+	int Point::setX(int _x) {
+		x = _x;
+		return x;
+	}
+
+	int Point::setY(int _y) {
+		y = _y;
+		return y;
+	}
 	void Point::PrintCoord() {
 		cout << x << "   " << y <<endl;;
 	}

@@ -1,7 +1,7 @@
 #pragma once
 class Point
 {
-	protected:
+	private:
 		int x, y;
 	public:
 		Point();
@@ -13,6 +13,10 @@ class Point
 		int getX();
 
 		int getY();
+
+		int setX(int x);
+
+		int setY(int y);
 
 		void PrintCoord();
 
