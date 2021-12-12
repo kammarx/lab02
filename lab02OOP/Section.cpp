@@ -29,12 +29,7 @@ Section::Section(const Section& s) {
 	p2 = new Point(*(s.p2));
 }
 
-float Section::lineLength() {
-	float len;
-	if (p1 == 0 || p2 == 0)return 0;
-	len = sqrt(pow(p2->getX() -p1->getX(),2 )+ pow(p2->getY() - p1->getY(),2));
-	cout << "Length of the line: "<<len;
-}
+
 
 void Section::move(int dx, int dy) {
 	p1->setX(p1->getX() + dx);

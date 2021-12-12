@@ -139,13 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Cuboid.cpp" />
     <ClCompile Include="lab02OOP.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Section.cpp" />
     <ClCompile Include="Point.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Cuboid.h" />
+    <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Section.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>

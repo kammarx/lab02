@@ -41,11 +41,6 @@ using namespace std;
 		cout << x << "   " << y <<endl;;
 	}
 
-	Point::~Point() {
-		cout << x << " " << y << endl;;
-		cout << "~Point() - destructor is called\n";
-	}
-
 	void Point::move(int dx, int dy) {
 		x = x + dx;
 		y = y + dy;
@@ -57,5 +52,10 @@ using namespace std;
 		y = 0;
 	}
 
+	Point::~Point() {
+		cout << "~Point() - destructor is called\n";
+		cout << x << " " << y << endl;;
+
+	}
 
 

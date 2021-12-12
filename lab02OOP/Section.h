@@ -1,6 +1,11 @@
 #pragma once
+#include <iostream>
+#include <cmath>
 #include "Point.h"
-class Section : public Point
+
+using namespace std;
+
+class Section
 {
 private:
 	Point* p1;
@@ -16,7 +21,13 @@ public:
 
 	void move(int dx,int dy);
 
-	float lineLength();
+	static void lineLength(Point* p1, Point* p2) {
+		double len;
+		if (p1 == 0 || p2 == 0)return;
+		len = sqrt(pow(p2->getX() - p1->getX(), 2) + pow(p2->getY() - p1->getY(), 2));
+		cout << "Length of the line: "<<len<<"\n";
+	}
+
 
 	~Section();
 };

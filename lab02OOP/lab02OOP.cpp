@@ -2,7 +2,6 @@
 #include <conio.h>
 #include "Point.h"
 #include "Section.h"
-#include "Circle.h"
 using namespace std;
 
 
@@ -11,26 +10,30 @@ using namespace std;
 
 int main()
 {
+	Section* s1 = new Section;
+	Section* s2 = new Section(*s1);
 	
+	delete s1;
+	delete s2;
+		//Point p(4,2);
+		//Point* p1 = new Point(3,5);
+		//Point* p2 = new Point(2,2);
+		//Section::lineLength(p1,p2);
+		//Point* p3 = new Point(*p1);
 
-		Point p1;
-		Point p2(50, 80);
-		Point p3(p2);
-		/*Point* p4 = new Point;
-		Point* p5 = new Point(23, 34);
-		Point* p6 = new Point(*p5);*/
+		//p.move(10,10);
+		///*delete p4;
+		//delete p5;
+		//delete p6;*/
 
-		p2.move(10,10);
-		/*delete p4;
-		delete p5;
-		delete p6;*/
+	 //   Section* s1 = new Section(6,3,7,2);
+		//Section* s2 = new Section(*s1);
+		////s1->move(10,10);
 
-	    Section* s1 = new Section(6,3,7,2);
-		Section* s2 = new Section(*s1);
-		s1->move(10,10);
-
-	
-		delete s1;
-		delete s2;
+		//delete p1;
+		//delete p2;
+		//delete p3;
+		//delete s1;
+		//delete s2;
 		return 0;
 }
