@@ -12,12 +12,12 @@ public:
 
 	Rectangle(Rectangle& rec);
 
-	int recSquare(int a, int b);
-
 	void resetRec();
 
 	virtual void print();
 
-	int MeasureRec(Rectangle rec);
+	int MeasureRec();
+
+	~Rectangle();
 };
 

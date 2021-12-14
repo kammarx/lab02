@@ -15,21 +15,21 @@ Cuboid::Cuboid(int a, int b, int c)
 }
 
 Cuboid::Cuboid(const Cuboid& cuboid) {
-	cout << "Cuboid(const Cuboid& cuboid)-copy constructor is called";
+	cout << "Cuboid(const Cuboid& cuboid)-copy constructor is called\n";
 	a = cuboid.a;//a and b are protected -> we can access them without getter
 	b = cuboid.b;
 	c = cuboid.c;
 }
 
 void Cuboid::print() {
-	cout << "It's cuboid";
+	cout << "It's cuboid\n";
 }
 
-int Cuboid::MeasureCub(Cuboid cuboid) {
-	//int vol = MeasureRec()*c;
-	return 0;
+int Cuboid::MeasureCub() {
+	int vol = MeasureRec()*c;
+	return vol;
 }
 
 Cuboid::~Cuboid() {
-	cout << "Cuboid destructor is called";
+	cout << "Cuboid destructor is called\n";
 }

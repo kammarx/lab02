@@ -29,8 +29,6 @@ Section::Section(const Section& s) {
 	p2 = new Point(*(s.p2));
 }
 
-
-
 void Section::move(int dx, int dy) {
 	p1->setX(p1->getX() + dx);
 	p1->setY(p1->getY() + dy);

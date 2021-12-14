@@ -2,18 +2,18 @@
 #include "Rectangle.h"
 class Cuboid : public Rectangle
 {
-public:
-	int c;
 private:
+	int c;
+public:
 	Cuboid();
 
 	Cuboid(int a, int b, int c);
 
 	Cuboid(const Cuboid& cuboid);
 
-	void print();
+	void print() override;
 
-	int MeasureCub(Cuboid cuboid);
+	int MeasureCub();
 
 	~Cuboid();
 

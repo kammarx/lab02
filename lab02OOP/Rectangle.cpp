@@ -15,7 +15,7 @@ Rectangle::Rectangle(int a,int b) {
 }
 
 Rectangle::Rectangle(Rectangle& rec) {
-	cout << "Rectangle(Rectangle& rec) - copy contructor is called";
+	cout << "Rectangle(Rectangle& rec) - copy contructor is called\n";
 	a = rec.a;
 	b = rec.b;
 }
@@ -26,11 +26,14 @@ void Rectangle::resetRec() {
 }
 
 void Rectangle::print() {
-	cout << "It's rectangle";
+	cout << "It's rectangle\n";
 }
 
-int Rectangle::MeasureRec(Rectangle rec) {
-	int sq = rec.a * rec.b;
+int Rectangle::MeasureRec() {
+	int sq = a * b;
 	return sq;
 }
 
+Rectangle::~Rectangle() {
+	cout << "~Rectangle() - destructor is called\n";
+}
