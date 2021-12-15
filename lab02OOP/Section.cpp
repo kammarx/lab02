@@ -25,7 +25,7 @@ Section::Section(Point& p1, Point& p2) {
 
 Section::Section(const Section& s) {
 	cout << "Section(const  Section &s) - copy constructor\n";
-	p1 = new Point(*(s.p1));
+    p1 = new Point(*(s.p1));
 	p2 = new Point(*(s.p2));
 }
 
